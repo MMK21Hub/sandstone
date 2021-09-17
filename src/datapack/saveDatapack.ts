@@ -69,7 +69,7 @@ export type SaveOptions = {
    * The format version of the datapack.
    * Corresponds to the `pack.pack_format` property of the `pack.mcmeta` file.
    *
-   * @default 6
+   * @default 8
    */
   formatVersion?: number
 
