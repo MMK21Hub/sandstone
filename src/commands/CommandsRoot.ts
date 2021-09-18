@@ -10,6 +10,7 @@ import {
   Experience,
   Fill,
   Forceload,
+  Jfr,
   FunctionCommand, GameruleCommand, Item, Loot, Particle, RecipeCommand, Schedule, Scoreboard, SpreadPlayers, TagCommand, Team, Teleport, Time, Title, Trigger, Weather, WorldBorder,
 } from './implementations'
 
@@ -241,6 +242,9 @@ export class CommandsRoot {
    */
   @command('help', { isRoot: true })
   help = (command_?: LiteralUnion<keyof typeof commands>, ...parameters: string[]) => { }
+
+  // jfr command //
+  jfr = new Jfr(this)
 
   // kill command //
   /**
